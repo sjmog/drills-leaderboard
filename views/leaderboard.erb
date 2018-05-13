@@ -1,0 +1,7 @@
+<h1>Drills Leaderboard</h1>
+
+<ol>
+  <% @times.each do |time| %>
+  <li><%= time['name'] %>: <%= time['time'] %> seconds</li>
+  <% end %>
+</ol>
