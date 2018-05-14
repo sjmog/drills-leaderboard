@@ -1,7 +1,17 @@
-<h1>Drills Leaderboard</h1>
+<header>
+  <h1>Drills Leaderboard</h1>
+</header>
 
-<ol>
-  <% @times.each do |time| %>
-  <li><%= time['name'] %>: <%= time['time'] %> seconds</li>
-  <% end %>
-</ol>
+<article>
+  <h2>Drill 1: Assignment</h2>
+  <ol>
+    <% @times.each do |time| %>
+    <li>
+      <div class="competitor">
+        <span><%= time['name'] %></span>
+        <span><%= time['time'] %> seconds</span>
+      </div>
+    </li>
+    <% end %>
+  </ol>
+</article>
